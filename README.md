@@ -1,5 +1,6 @@
-<br>
-<span style="color: red;"> # R Color Palette Extraction and Sentiment Analysis Project* </p>
+
+# <p align="center" style="color:red;">R Color Palette Extraction and Sentiment Analysis Project</p>
+
 
 <hr style="border-top: 2px solid blue;">
 <div style="text-align: justify">
