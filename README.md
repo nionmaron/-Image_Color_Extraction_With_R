@@ -1,14 +1,13 @@
 <br>
-<div style="text-align: center; color: darkblue;">
-## **R Color Palette Extraction and Sentiment Analysis Project**
-</div>
+<span style="color: red;"> # R Color Palette Extraction and Sentiment Analysis Project* </p>
+
 <hr style="border-top: 2px solid blue;">
 <div style="text-align: justify">
 <br>
 
 <div style="color: darkblue;">
 This repository contains an R project that processes an image and extracts the color palette, provides complementary color suggestions, and performs a sentiment analysis based on the predominant colors. The project also includes a Shiny app that allows the user to upload an image and generate a report in HTML and PDF with the results.
-</div>
+</div> <br>
 Este repositório contém um projeto em R que processa uma imagem e extrai a paleta de cores, fornece sugestões de cores complementares e realiza uma análise de sentimentos baseada nas cores predominantes. O projeto também inclui um aplicativo Shiny que permite ao usuário carregar uma imagem e gerar um relatório em HTML e PDF com os resultados.
 
 
