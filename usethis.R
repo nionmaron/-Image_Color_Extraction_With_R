@@ -3,13 +3,13 @@
 library(usethis)
 
 # Especificar local de atualização
-usethis::use_git_remote("origin", url = "https://github.com/nionmaron/Extracting-Color-Palettes-With-R.git", overwrite = TRUE)
+#usethis::use_git_remote("origin", url = "https://github.com/nionmaron/Extracting-Color-Palettes-With-R.git", overwrite = TRUE)
 
 # abrir local
 usethis::browse_github()
 
 # Obter informações sobre o estado do repositório Git
-sitrep <- git_sitrep()
+git_sitrep()
 
 # Obter o diretório-raiz do projeto atual
 usethis::proj_get()

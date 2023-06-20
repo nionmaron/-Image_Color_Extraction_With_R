@@ -1,0 +1,68 @@
+---
+title: "Color Analysis Report"
+author: ""
+date: "2023-06-19"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(ggplot2)
+library(magick)
+library(imager)
+library(dplyr)
+library(tibble)
+library(jpeg)
+library(png)
+library(ggsci)
+library(xkcdcolors)
+library(colorspace)
+library(DT)
+source("Function_Color.R")
+```
+<br>
+Este relatório é resultado de um processamento de imagem n extrai a paleta de cores, fornece sugestões de cores complementares e realiza uma análise de sentimentos baseada nas cores predominantes.
+<br>
+
+## Resultado da Extração
+
+Com base no arquivo  formato com foram extraido
+
+
+Tabela da paleta de cores extraída da imagem
+
+```{r include=FALSE}
+image <- readPNG("test.png")
+color_palette<- Color_Extraction(image,num_cores=5)
+df_cores<-data.frame("color_name"=nearest_named(color_palette)[[1]],
+                     "hex_code"=color_palette )
+# Calcule a luminância de cada cor
+df_cores$luminancia <- sapply(df_cores$hex_code, calc_luminancia)
+df_cores$color<-""
+```
+
+```{r}
+plot(image)
+```
+
+
+
+```{r}
+# Crie a tabela
+datatable(df_cores, options = list(autoWidth = TRUE,searching = FALSE,info = FALSE,paging=FALSE),rownames = FALSE) %>% 
+  formatStyle(
+    'color', 'hex_code',
+    backgroundColor = styleEqual(df_cores$hex_code, df_cores$hex_code)
+  )
+```
+A luminância relativa para espaços de cor standard RGB (sRGB) é definida pela fórmula: **L(R,G,B) = 0.2125R + 0.7152G + 0.0722B**
+
+Média da cor da imagem
+
+
+## Sugestão de Cores
+
+
+## Psicologia das Cores
+

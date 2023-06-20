@@ -1,21 +1,14 @@
-
-
-
-library(magrittr)
-library(tibble)
+library(magick)
 library(dplyr)
-library(jpeg)
-library(magrittr)
 library(tibble)
-library(dplyr)
-library(ggplot2)
 
 library(jpeg)
 library(png)
+library(imager)
 
+source("Function_Color_Extraction.r")
 
-# Função
-Color_Extraction <- function(img, num_cores){
+Color_Extraction2 <- function(img, num_cores){
   # transforma a imagem em uma matriz
   img_matrix <- apply(img, 3, as.numeric)
   # treina o algoritmo de k m?dias
@@ -38,14 +31,11 @@ Color_Extraction <- function(img, num_cores){
 }
 
 
-# Escolher tipo de imagem: png ou jpg
-
 img <- readJPEG("COMPLEMENTO/20210911_143639.jpg")
 img <- readPNG("test.png")
 
-
 plot(as.raster(img))
-paleta <- Color_Extraction(img, 10)
+paleta <- Color_Extraction2(img, 10)
 paleta
 df_cores<-data.frame("nomes_cores"=paleta,"cores_hex"=paleta )
 

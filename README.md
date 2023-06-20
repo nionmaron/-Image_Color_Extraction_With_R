@@ -1,23 +1,21 @@
 
 # <p align="center" style="color:red;">R Color Palette Extraction and Sentiment Analysis Project</p>
-
-
 <hr style="border-top: 2px solid blue;">
-<div style="text-align: justify">
-<br>
+
 
 <div style="color: darkblue;">
 This repository contains an R project that processes an image and extracts the color palette, provides complementary color suggestions, and performs a sentiment analysis based on the predominant colors. The project also includes a Shiny app that allows the user to upload an image and generate a report in HTML and PDF with the results.
 </div> <br>
-Este repositório contém um projeto em R que processa uma imagem e extrai a paleta de cores, fornece sugestões de cores complementares e realiza uma análise de sentimentos baseada nas cores predominantes. O projeto também inclui um aplicativo Shiny que permite ao usuário carregar uma imagem e gerar um relatório em HTML e PDF com os resultados.
+
+*Este repositório contém um projeto em R que processa uma imagem e extrai a paleta de cores, fornece sugestões de cores complementares e realiza uma análise de sentimentos baseada nas cores predominantes. O projeto também inclui um aplicativo Shiny que permite ao usuário carregar uma imagem e gerar um relatório em HTML e PDF com os resultados.*
 
 
 
 ## **Features / Características**
 
-Extração de paleta de cores / *Color palette extraction*: A partir de qualquer imagem fornecida, o código irá processar a imagem e extrair a paleta de cores predominantes.
+Color palette extraction/ *Extração de paleta de cores: A partir de qualquer imagem fornecida, o código irá processar a imagem e extrair a paleta de cores predominantes*
 
-Sugestões de cores complementares / Complementary color suggestions: Com base nas cores extraídas, o código irá sugerir cores complementares que harmonizam bem com as cores da imagem. Based on the extracted colors, the code will suggest complementary colors that harmonize well with the image colors.
+Complementary color suggestions:/ Sugestões de cores complementares: Com base nas cores extraídas, o código irá sugerir cores complementares que harmonizam bem com as cores da imagem. Based on the extracted colors, the code will suggest complementary colors that harmonize well with the image colors.
 
 Análise de sentimentos de cores / *Color sentiment analysis*: Cada cor pode evocar diferentes sentimentos e emoções. Este código irá classificar as cores predominantes em categorias de sentimentos como "Alegria", "Tranquilidade", "Energia", etc. *Each color can evoke different feelings and emotions. This code will classify the predominant colors into sentiment categories like "Joy", "Tranquility", "Energy", etc.*
 
@@ -44,6 +42,5 @@ Aplicativo Shiny / *Shiny app*: Um aplicativo Shiny interativo está incluído, 
 - **Realidade Aumentada / Augmented Reality:** Na realidade aumentada, a harmonia e a psicologia das cores são fundamentais para criar uma experiência imersiva. Essa ferramenta pode ajudar os criadores a escolherem cores que melhorem a imersão e a interação do usuário. / *In augmented reality, color harmony and psychology are key to creating an immersive experience. This tool can help creators choose colors that enhance user immersion and interaction.*
 
 ## **License / Licença**
-Este projeto é licenciado sob a Licença MIT. Veja o arquivo LICENSE.md para mais detalhes./ *This project is licensed under the MIT License. See the LICENSE.md file for more details.*
+This project is licensed under the MIT License. See the LICENSE.md file for more details. / *Este projeto é licenciado sob a Licença MIT. Veja o arquivo LICENSE.md para mais detalhes.*
 
-</div>

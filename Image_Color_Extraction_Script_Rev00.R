@@ -1,6 +1,6 @@
 
 
-library(jpeg)
+
 library(magrittr)
 library(tibble)
 library(dplyr)
@@ -10,7 +10,11 @@ library(tibble)
 library(dplyr)
 library(ggplot2)
 
+library(jpeg)
+library(png)
 
+
+# Função
 Color_Extraction <- function(img, num_cores){
   # transforma a imagem em uma matriz
   img_matrix <- apply(img, 3, as.numeric)
@@ -34,8 +38,11 @@ Color_Extraction <- function(img, num_cores){
 }
 
 
+# Escolher tipo de imagem: png ou jpg
+
 img <- readJPEG("COMPLEMENTO/20210911_143639.jpg")
 img <- readPNG("test.png")
+
 
 plot(as.raster(img))
 paleta <- Color_Extraction(img, 10)
